@@ -94,6 +94,7 @@ class CreamyBaconBuilder:
         self.progress = PizzaProgress.ready
         print('your creamy bacon is ready')
 
+
 class Waiter:
     def __init__(self):
         self.builder = None
@@ -118,6 +119,7 @@ def validate_style(builders):
     else:
         return (True, builder)
 
+
 def main():
     builders = dict(m=MargaritaBuilder, c=CreamyBaconBuilder)
     valid_input = False
@@ -129,6 +131,7 @@ def main():
     pizza = waiter.pizza
     print()
     print('Enjoy your {}!'.format(pizza))
+
 
 if __name__ == '__main__':
     main()
